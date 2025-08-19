@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbook - Car Rental Landing Page</title>
+    <link rel="icon" href="demo-1/assets/img/favicon.png" type="image/png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="demo-1/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="demo-1/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="demo-1/assets/font/flaticon_mycollection.css">
+    <link rel="stylesheet" href="demo-1/assets/css/swiper.css">
+    <link rel="stylesheet" href="demo-1/assets/css/animate.css">
+    <link rel="stylesheet" href="demo-1/assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="demo-1/assets/css/nice-select.css">
+    <link rel="stylesheet" href="demo-1/assets/css/style.css">
+    <link rel="stylesheet" href="demo-1/assets/css/responsive.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-car">
+            <defs>
+                <pattern id="uil-car" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+                </pattern>
+            </defs>
+            <g class="car__body">
+                <path class="car__body" d="M47,40h3.8l7.8-10.3c0.6-0.8,1.6-1.3,2.6-1.3h22.1c1.7,0,3.1,1.4,3.1,3.1v5.5h8c2.2,0,4,1.8,4,4v15c0,2.2-1.8,4-4,4h-3v7c0,1.7-1.4,3.1-3.1,3.1h-6.2c-1.7,0-3.1-1.4-3.1-3.1v-7H52.4v7c0,1.7-1.4,3.1-3.1,3.1h-6.2c-1.7,0-3.1-1.4-3.1-3.1v-7h-3c-2.2,0-4-1.8-4-4V44C33,41.8,34.8,40,37,40z" fill="#ff5f00"></path>
+                <ellipse class="car__wheel--left" cx="21" cy="63" rx="9" ry="9" fill="#000"></ellipse>
+                <ellipse class="car__wheel--right" cx="77" cy="63" rx="9" ry="9" fill="#000"></ellipse>
+            </g>
+            <g class="car__line car__line--top">
+                <path class="car__line" d="M22,35h56" fill="none" stroke="#ff5f00" stroke-width="3" stroke-linecap="round"></path>
+            </g>
+            <g class="car__line car__line--middle">
+                <path class="car__line" d="M22,50h56" fill="none" stroke="#ff5f00" stroke-width="3" stroke-linecap="round"></path>
+            </g>
+            <g class="car__line car__line--bottom">
+                <path class="car__line" d="M22,65h56" fill="none" stroke="#ff5f00" stroke-width="3" stroke-linecap="round"></path>
+            </g>
+        </svg>
+    </div>
+
+    <!-- Header -->
+    <header id="stickyHeader">
+        <div class="header-top-bar main-top-bar">
+            <div class="container">
+                <div class="top-bar">
+                    <div class="help-number">
+                        <h6><i class="flaticon-phone"></i> +1 234 567 8900</h6>
+                        <h6><i class="flaticon-internet"></i> info@carbook.com</h6>
+                    </div>
+                    <div class="login">
+                        <a href="#"><i class="flaticon-user"></i> Login</a>
+                        <a href="#" class="register">
+                            <span><i class="flaticon-user"></i> Register</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-top-bar">
+            <div class="container">
+                <div class="bottom-bar">
+                    <div class="logo">
+                        <a href="index.html">
+                            <h2 style="color: #ff5f00; font-weight: bold; margin: 0;">CARBOOK</h2>
+                        </a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#cars">Cars</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="img-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Car Background">
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-section-text">
+                <div class="hero-text">
+                    <h1>Find Your Perfect <span>Rental Car</span></h1>
+                    <h5>Premium Car Rental Service</h5>
+                    <ul class="theme-list">
+                        <li><i class="flaticon-check-mark"></i> Best Price Guarantee</li>
+                        <li><i class="flaticon-check-mark"></i> 24/7 Customer Support</li>
+                        <li><i class="flaticon-check-mark"></i> Free Cancellation</li>
+                    </ul>
+                    <a href="#cars" class="btn">
+                        <span>Book Now <i class="flaticon-right-up"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Booking Form -->
+    <section class="gap no-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tabtwo">
+                        <nav>
+                            <div class="nav nav-pills flex-column nav-pills tabtwo" id="v-pills-tab" role="tablist">
+                                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab">
+                                    <i class="flaticon-car"></i>
+                                </button>
+                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab">
+                                    <i class="flaticon-van"></i>
+                                </button>
+                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab">
+                                    <i class="flaticon-suv-car"></i>
+                                </button>
+                            </div>
+                        </nav>
+                        
+                        <div class="tab-content tabtwo" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel">
+                                <form class="contact-form" action="demo-1/contact.php" method="post">
+                                    <div class="pick-up">
+                                        <span><i class="flaticon-search"></i> Pick-up Location</span>
+                                        <input type="text" name="city" placeholder="Enter pick-up location" required>
+                                        <i class="flaticon-aim"></i>
+                                    </div>
+                                    
+                                    <div class="pick-up">
+                                        <span><i class="flaticon-car"></i> Vehicle Type</span>
+                                        <select name="vehicle" class="nice-select Advice" required>
+                                            <option value="">Select Vehicle</option>
+                                            <option value="economy">Economy</option>
+                                            <option value="compact">Compact</option>
+                                            <option value="suv">SUV</option>
+                                            <option value="luxury">Luxury</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="datatime">
+                                        <span>Pick-up Date & Time</span>
+                                        <div class="date-from">
+                                            <input type="date" name="date_from" required>
+                                            <input type="time" name="time_from" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="datatime">
+                                        <span>Return Date & Time</span>
+                                        <div class="date-from">
+                                            <input type="date" name="date_to" required>
+                                            <input type="time" name="time_to" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="rental-type">
+                                        <span>Rental Type</span>
+                                        <ul class="rental-type">
+                                            <li>
+                                                <input type="radio" name="rental_type" value="daily" id="daily">
+                                                <label for="daily">Daily</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="rental_type" value="weekly" id="weekly">
+                                                <label for="weekly">Weekly</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="rental_type" value="monthly" id="monthly">
+                                                <label for="monthly">Monthly</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div style="margin-top: 10px;">
+                                        <input type="checkbox" name="location" id="location">
+                                        <label for="location" style="margin-left: 10px;">Return to same location</label>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn">
+                                        <span>Search Cars</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="gap">
+        <div class="container">
+            <div class="heading">
+                <span>HOW IT WORKS</span>
+                <h2>Rent Your Car in <span>3 Easy Steps</span></h2>
+                <p>Follow these simple steps to rent your perfect car</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="stap active">
+                        <img src="https://images.pexels.com/photos/1164778/pexels-photo-1164778.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Choose Location">
+                        <h4>01</h4>
+                        <h3>Choose Location</h3>
+                        <p>Select your preferred pick-up and drop-off locations from our wide network of stations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="stap">
+                        <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Pick-up Date">
+                        <h4>02</h4>
+                        <h3>Pick-up Date</h3>
+                        <p>Choose your rental dates and times that work best for your schedule.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="stap">
+                        <img src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Book Your Car">
+                        <h4>03</h4>
+                        <h3>Book Your Car</h3>
+                        <p>Complete your booking with our secure payment system and get ready to drive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars -->
+    <section id="cars" class="gap">
+        <div class="container">
+            <div class="heading">
+                <span>OUR FLEET</span>
+                <h2>Choose Your <span>Perfect Car</span></h2>
+                <p>Discover our wide range of vehicles for every need</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="car-book">
+                        <div class="save-upto">
+                            <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="Discount">
+                            <h6>Save 20%</h6>
+                        </div>
+                        <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Economy Car" class="car-back">
+                        <h3>Economy Car</h3>
+                        <ul>
+                            <li><i class="flaticon-user"></i> 4 Passengers</li>
+                            <li><i class="flaticon-speedometer"></i> Auto</li>
+                            <li><i class="flaticon-coin"></i> $25/day</li>
+                        </ul>
+                        <a href="#">Book Now <i class="flaticon-right-up"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="car-book two">
+                        <div class="save-upto">
+                            <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="Discount">
+                            <h6>Save 15%</h6>
+                        </div>
+                        <img src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="SUV Car" class="car-back">
+                        <h3>SUV Car</h3>
+                        <ul>
+                            <li><i class="flaticon-user"></i> 7 Passengers</li>
+                            <li><i class="flaticon-speedometer"></i> Auto</li>
+                            <li><i class="flaticon-coin"></i> $45/day</li>
+                        </ul>
+                        <a href="#">Book Now <i class="flaticon-right-up"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="car-book three">
+                        <div class="save-upto">
+                            <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="Discount">
+                            <h6>Save 25%</h6>
+                        </div>
+                        <img src="https://images.pexels.com/photos/1164778/pexels-photo-1164778.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Luxury Car" class="car-back">
+                        <h3>Luxury Car</h3>
+                        <ul>
+                            <li><i class="flaticon-user"></i> 5 Passengers</li>
+                            <li><i class="flaticon-speedometer"></i> Auto</li>
+                            <li><i class="flaticon-coin"></i> $75/day</li>
+                        </ul>
+                        <a href="#">Book Now <i class="flaticon-right-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="gap">
+        <div class="container">
+            <div class="heading">
+                <span>OUR SERVICES</span>
+                <h2>Why Choose <span>Carbook</span></h2>
+                <p>We provide the best car rental services with premium features</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <div>
+                            <h3>24/7 Support</h3>
+                            <i class="flaticon-phone"></i>
+                        </div>
+                        <p>Our customer support team is available 24/7 to assist you with any questions or concerns.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <div>
+                            <h3>Best Price</h3>
+                            <i class="flaticon-coin"></i>
+                        </div>
+                        <p>We guarantee the best prices in the market with no hidden fees or extra charges.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <div>
+                            <h3>Free Cancellation</h3>
+                            <i class="flaticon-check-mark"></i>
+                        </div>
+                        <p>Cancel your booking for free up to 24 hours before your scheduled pick-up time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="subscribe-letter">
+                        <h3>Subscribe to Our Newsletter</h3>
+                        <p>Get the latest updates on new cars, special offers, and exclusive deals.</p>
+                        <form id="subscribe-form" action="demo-1/subs.php" method="post">
+                            <input type="email" name="Email_Address" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn">
+                                <span>Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="book-car-hire">
+                        <h2>Ready to Book Your Car?</h2>
+                        <p>Start your journey with us today</p>
+                        <a href="#cars" class="btn">
+                            <span>Book Now</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html">CARBOOK</a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-information">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="information-link">
+                            <h3>Contact Info</h3>
+                            <p><i class="flaticon-phone"></i> +1 234 567 8900</p>
+                            <p><i class="flaticon-internet"></i> info@carbook.com</p>
+                            <p><i class="flaticon-map"></i> 123 Main Street, City, State 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="information-link">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#services">Our Services</a></li>
+                                <li><a href="#cars">Car Fleet</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="information-link">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Carbook. All rights reserved.</p>
+                <p>Designed with ❤️ by Winsfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Progress Button -->
+    <div id="progress">
+        <span id="progress-value">
+            <i class="fas fa-arrow-up"></i>
+        </span>
+    </div>
+
+    <!-- Mouse Cursor -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- JavaScript Files -->
+    <script src="demo-1/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="demo-1/assets/js/bootstrap.min.js"></script>
+    <script src="demo-1/assets/js/swiper.js"></script>
+    <script src="demo-1/assets/js/jquery.fancybox.min.js"></script>
+    <script src="demo-1/assets/js/jquery.nice-select.min.js"></script>
+    <script src="demo-1/assets/js/wow.min.js"></script>
+    <script src="demo-1/assets/js/sweetalert.min.js"></script>
+    <script src="demo-1/assets/js/contact.js"></script>
+    <script src="demo-1/assets/js/custom.js"></script>
+</body>
+</html>
